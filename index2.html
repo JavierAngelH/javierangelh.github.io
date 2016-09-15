@@ -1,0 +1,1312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sab Miller - Demo Survey</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h2>Encuesta en Sitio</h2>
+                </div>
+                <div class="col-md-2">
+                    <h3 id="timeHeader"></h3>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <!--Q1-->
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center">Rey Coronado</th>
+                                    <th style="text-align:center">Rey Centennial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>¿En qué supermercado se encuentra?</strong></td>
+                                    <td style="text-align:center"><input type="radio" name="q1Radio" value="O1"></td>
+                                    <td style="text-align:center"><input type="radio" name="q1Radio" value="O2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--Q2, Q3, Q4, Q5, Q6-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Por medio de observación, favor complete la siguiente información
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>¿En qué área está ubicada?</label>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="q2Radio" value="O1">
+                                                    Pasillo Principal
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="q2Radio" value="O2">
+                                                    Neveras, Áreas Frías
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <label>¿Cúantas personas conforman el grupo?</label>
+                                    <div class="form-group">
+                                        <select class="form-control" id="sel1">
+                                            <option value="O1">1</option>
+                                            <option value="O2">2</option>
+                                            <option value="O3">3</option>
+                                            <option value="O4">4</option>
+                                            <option value="O5">5</option>
+                                            <option value="O6">6</option>
+                                            <option value="O7">7</option>
+                                            <option value="O8">+8</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label>¿Género?</label>
+                                    <div class="form-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q4Radio" value="O1">
+                                                        Masculino
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q4Radio" value="O2">
+                                                        Femenino
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q4Radio" value="O3">
+                                                        Ambos
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label>Rango de edad</label>
+                                    <div class="form-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q5Radio" value="O1">
+                                                        18-25
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q5Radio" value="O2">
+                                                        26-35
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q5Radio" value="O3">
+                                                        36+
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Su compra fue realizada por medio de</label>
+                                    <div class="form-group">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q6Radio" value="O1">
+                                                        <img src="images/cart.png">
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q6Radio" value="O2">
+                                                        <img src="images/basket.png">
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="q6Radio" value="O3">
+                                                        <img src="images/none.png">
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q7-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Usualmente cuantas veces usted diría que
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th style="text-align:center">Diario</th>
+                                                <th style="text-align:center">2 a 3 veces a la semana</th>
+                                                <th style="text-align:center">1 vez a la semana</th>
+                                                <th style="text-align:center">2 o 3 veces al mes</th>
+                                                <th style="text-align:center">1 vez al mes</th>
+                                                <th style="text-align:center">Menos de 1 vez al mes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Visita este Supermercado</td>
+                                                <td style="text-align:center"><input type="radio" name="q7Radio" value="O1"></td>
+                                                <td style="text-align:center"><input type="radio" name="q7Radio" value="O2"></td>
+                                                <td style="text-align:center"><input type="radio" name="q7Radio" value="O3"></td>
+                                                <td style="text-align:center"><input type="radio" name="q7Radio" value="O4"></td>
+                                                <td style="text-align:center"><input type="radio" name="q7Radio" value="O5"></td>
+                                                <td style="text-align:center"><input type="radio" name="q7Radio" value="O6"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Compra Cervezas en Supermercados</td>
+                                                <td style="text-align:center"><input type="radio" name="q8Radio" value="O1"></td>
+                                                <td style="text-align:center"><input type="radio" name="q8Radio" value="O2"></td>
+                                                <td style="text-align:center"><input type="radio" name="q8Radio" value="O3"></td>
+                                                <td style="text-align:center"><input type="radio" name="q8Radio" value="O4"></td>
+                                                <td style="text-align:center"><input type="radio" name="q8Radio" value="O5"></td>
+                                                <td style="text-align:center"><input type="radio" name="q8Radio" value="O6"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q8, Q9, Q10-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                ¿Usted acostumbra a realizar su compra de Cervezas en supermercados?
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th style="text-align:center">Si</th>
+                                                    <th style="text-align:center">No</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Responda</strong></td>
+                                                    <td style="text-align:center"><input id="q8o1" type="radio" name="q9Radio" value="O1"></td>
+                                                    <td style="text-align:center"><input id="q8o2" type="radio" name="q9Radio" value="O2"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="q9area" class="col-md-12" hidden>
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading" style="background-color: #333;border-color: #333">
+                                            <h3 class="panel-title">
+                                                ¿En que otro tipo de tiendas, acostumbra usted a comprar cervezas?
+                                            </h3>
+                                        </div>
+                                        <div class="panel-body" style="border-color: #333">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th style="text-align:center">Diario</th>
+                                                        <th style="text-align:center">2 a 3 veces a la semana</th>
+                                                        <th style="text-align:center">1 vez a la semana</th>
+                                                        <th style="text-align:center">2 o 3 veces al mes</th>
+                                                        <th style="text-align:center">1 vez al mes</th>
+                                                        <th style="text-align:center">Menos de 1 vez al mes</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Mini Super</td>
+                                                        <td style="text-align:center"><input type="radio" name="q10Radio" value="O1"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q10Radio" value="O2"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q10Radio" value="O3"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q10Radio" value="O4"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q10Radio" value="O5"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q10Radio" value="O6"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Abarrotería</td>
+                                                        <td style="text-align:center"><input type="radio" name="q11Radio" value="O1"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q11Radio" value="O2"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q11Radio" value="O3"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q11Radio" value="O4"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q11Radio" value="O5"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q11Radio" value="O6"></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Licoreras</td>
+                                                        <td style="text-align:center"><input type="radio" name="q12Radio" value="O1"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q12Radio" value="O2"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q12Radio" value="O3"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q12Radio" value="O4"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q12Radio" value="O5"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q12Radio" value="O6"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tienda de Conveniencia</td>
+                                                        <td style="text-align:center"><input type="radio" name="q13Radio" value="O1"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q13Radio" value="O2"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q13Radio" value="O3"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q13Radio" value="O4"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q13Radio" value="O5"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q13Radio" value="O6"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Otros</td>
+                                                        <td style="text-align:center"><input type="radio" name="q14Radio" value="O1"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q14Radio" value="O2"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q14Radio" value="O3"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q14Radio" value="O4"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q14Radio" value="O5"></td>
+                                                        <td style="text-align:center"><input type="radio" name="q14Radio" value="O6"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="q10area" class="col-md-12" hidden>
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading" style="background-color: #333;border-color: #333">
+                                            <h3 class="panel-title">
+                                                ¿Y Cuales serían las razones para que usted realice la compra de Cervezas en estos lugares?
+                                            </h3>
+                                        </div>
+                                        <div class="panel-body" style="border-color: #333">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Principal Razón</th>
+                                                        <th>Otras Razones</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Conveniencia- Ubicación (Cerca de Casa / Trabajo)</td>
+                                                        <td style="text-align:center"><input type="checkbox" name="q15cbox"  value="O1"></td>
+                                                        <td style="text-align:center"><input type="checkbox"  name="q15cbox"  value="O2"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Conveniencia- Horario</td>
+                                                        <td style="text-align:center"><input type="checkbox" name="q15cbox"  value="O3"></td>
+                                                        <td style="text-align:center"><input type="checkbox"  name="q15cbox"  value="O4"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tiene una amplia gama de productos</td>
+                                                        <td style="text-align:center"><input type="checkbox" name="q15cbox"  value="O5"></td>
+                                                        <td style="text-align:center"><input type="checkbox"  name="q15cbox"  value="O6"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Precio / Promociones</td>
+                                                        <td style="text-align:center"><input type="checkbox" name="q15cbox"  value="O7"></td>
+                                                        <td style="text-align:center"><input type="checkbox"  name="q15cbox"  value="O8"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Confianza / Familiaridad</td>
+                                                        <td style="text-align:center"><input type="checkbox" name="q15cbox"  value="O9"></td>
+                                                        <td style="text-align:center"><input type="checkbox"  name="q15cbox"  value="O10"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>La tienda tiene un orden lógico que me permite encontrar rápidamente lo que busco</td>
+                                                     
+                                                        <td style="text-align:center"><input type="checkbox" name="q15cbox"  value="O11"></td>
+                                                        <td style="text-align:center"><input type="checkbox"  name="q15cbox"  value="O12"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Servicio</td>
+                                                        <td style="text-align:center"><input type="checkbox" name="q15cbox"  value="O13"></td>
+                                                        <td style="text-align:center"><input type="checkbox"  name="q15cbox"  value="O14"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Otro</td>
+                                                        <td colspan="2" style="text-align:center"><input type="text" name="q15text" class="form-control" placeholder="Tamaño, Colores, Peso, etc."></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q11-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                ¿Qué frase considera usted que mejor describe el motivo de su compra el día de hoy?
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Compra de Rutina (Diaria / Semanal / Quincenal / Mensual)</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q16cbox"  value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compra rápida para algunos productos básicos que necesitaba</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q16cbox"  value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compras para una ocasión en específico (fiesta, reunión, bbq, cena, etc)</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q16cbox"  value="O3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q12-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                ¿Cuál es la principal razón por la que usted escogió este punto de venta el día de hoy, otra razón?
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Principal Razón</th>
+                                                    <th>Otras Razones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Conveniencia- Ubicación (Cerca de Casa / Trabajo)</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Conveniencia- Horario</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cuenta con Tarjeta de Fidelidad (Puntos de Oro)</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tiene una amplia gama de productos</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O4"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ofrece marcas propias del supermercado</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O5"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Calidad / Frescura</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O6"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Precio / Promociones</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O7"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Confianza / Familiaridad</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O8"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>La tienda tiene un orden lógico que me permite encontrar rápidamente lo que busco</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O9"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Servicio</td>
+                                                    <td style="text-align:center"><input type="radio" name="q17Radio" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q17cbox" value = "O10"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Otro</td>
+                                                    <td colspan="2" style="text-align:center"><input type="text" name="q17text" class="form-control" placeholder="Tamaño, Colores, Peso, etc."></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q13-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                ¿Qué Marcas o Empaques Compro?
+                                Favor llena las columnas de empaque y cantidad bajo la línea de la marca (s) comprada.
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th style="text-align:center" colspan="2">Empaque</th>
+                                                    <th style="text-align:center" colspan="11">Cantidad</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Lata</th>
+                                                    <th>Botella</th>
+                                                    <th>1 a 5 Unds.</th>
+                                                    <th>1 six-pack</th>
+                                                    <th>2 six-pack</th>
+                                                    <th>3 six-pack</th>
+                                                    <th>1 caja (24 Unds.)</th>
+                                                    <th>2 cajas</th>
+                                                    <th>3 cajas</th>
+                                                    <th>Entre 3 y 5 cajas</th>
+                                                    <th>Más de 5 cajas</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Atlas</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q18cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Atlas Golden Light</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q19cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Balboa</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q20cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Balboa Ice</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q21cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Miller Lite</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q22cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Panama Light</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q23cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Panama</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q24cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Soberana</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q25cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Coors Light</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q26cbox" value = "O11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Otras</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O8"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O9"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O10"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q27cbox" value = "O11"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q14-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                ¿Qué razón diría usted que mejor describe por qué escogió esa Marca / Empaque?
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th style="text-align:center">Principal Razón</th style="text-align:center">
+                                                    <th style="text-align:center">Otras Razones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Precio / Promoción
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio"></td>
+                                                    <td style="text-align:center"><input type="checkbox" value=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Relación Precio / Calidad</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio"></td>
+                                                    <td style="text-align:center"><input type="checkbox" value=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Porque era la que estaba más fría</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio" value="O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q28cbox" value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Es la que siempre compro</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio" value="O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q28cbox" value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Es la que toman mis amigos</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio" value="O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q28cbox" value="O3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Porque tiene un sabor suave</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio" value="O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q28cbox" value="O4"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Porque tiene un sabor fuerte</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio" value="O5"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q28cbox" value="O5"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Por el nivel de alcohol</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio" value="O6"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q28cbox" value="O6"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tiene una imagen atractiva</td>
+                                                    <td style="text-align:center"><input type="radio" name="q28Radio" value="O7"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q28cbox" value="O7"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q15-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                ¿Cuál sería la principal ocasión que tenía en mente al momento de comprar cerveza el día de hoy?
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>PARA RELAJARME </td>
+                                                    <td style="text-align:center"><input type="radio" name="q29Radio" value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SOCIALIZANDO / PARKING CON AMIGOS / FAMILIARES</td>
+                                                    <td style="text-align:center"><input type="radio" name="q29Radio" value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CENANDO (TARDE/NOCHE)</td>
+                                                    <td style="text-align:center"><input type="radio" name="q29Radio" value="O3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>OCASIÓN ESPECIAL (Cumpleaños / Bodas / Aniversarios etc)</td>
+                                                    <td style="text-align:center"><input type="radio" name="q29Radio" value="O4"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Finalmente colocó algún producto de cerveza en su carretilla / cesta / manos</td>
+                                                    <td style="text-align:center"><input type="radio" name="q29Radio" value="O5"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q16-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Y esta ocasión donde será?
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>EN MI CASA </td>
+                                                    <td style="text-align:center"><input type="radio" name="q30Radio" value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>EN CASA DE OTRO</td>
+                                                    <td style="text-align:center"><input type="radio" name="q30Radio" value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CALLE / PARQUE</td>
+                                                    <td style="text-align:center"><input type="radio" name="q30Radio" value="O3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CANCHA DEPORTIVA</td>
+                                                    <td style="text-align:center"><input type="radio" name="q30Radio" value="O4"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PLAYA / PISCINA / RIO / PASEOS</td>
+                                                    <td style="text-align:center"><input type="radio" name="q30Radio" value="O5"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q17-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Y Con cuantas personas será:
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Yo solo </td>
+                                                    <td style="text-align:center"><input type="radio" name="q31Radio" value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Yo y un grupo menor de 3 personas</td>
+                                                    <td style="text-align:center"><input type="radio" name="q31Radio" value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Yo y un grupo de al menos 3 personas</td>
+                                                    <td style="text-align:center"><input type="radio" name="q31Radio" value="O3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Para otros (no para mi)</td>
+                                                    <td style="text-align:center"><input type="radio" name="q31Radio" value="O4"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q18-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" >
+                            <h3 class="panel-title">
+                                Y ese grupo son:
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Todos Hombre </td>
+                                                    <td style="text-align:center"><input type="radio" name="q32Radio"  value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Todos Mujeres</td>
+                                                    <td style="text-align:center"><input type="radio" name="q32Radio"  value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Grupo Mixto</td>
+                                                    <td style="text-align:center"><input type="radio" name="q32Radio"  value="O3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q19-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" >
+                            <h3 class="panel-title">
+                                Y esta ocasión con cuanto tiempo de antelación la planeo
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Hoy </td>
+                                                    <td style="text-align:center"><input type="radio" name="q33Radio"  value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ayer</td>
+                                                    <td style="text-align:center"><input type="radio" name="q33Radio"  value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Durante la semana</td>
+                                                    <td style="text-align:center"><input type="radio" name="q33Radio"  value="O3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>El Fin de Semana Pasado</td>
+                                                    <td style="text-align:center"><input type="radio" name="q33Radio"  value="O4"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hace más de 15 Dias</td>
+                                                    <td style="text-align:center"><input type="radio" name="q33Radio"  value="O5"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q20-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Ya tenía planeado que Marcas y Empaques de Cerveza compraría para esta Ocasión?
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Si, ya sabía exactamente lo que iba a comprar </td>
+                                                    <td style="text-align:center"><input type="radio" name="q34Radio"  value="O1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tenía una idea de lo que iba a comprar pero no sabia con exactitud </td>
+                                                    <td style="text-align:center"><input type="radio" name="q34Radio"  value="O2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>No, no sabía que marcas o empaques compraría</td>
+                                                    <td style="text-align:center"><input type="radio" name="q34Radio"  value="O3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Q21-->
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Cómo describiría que fue su experiencia en la tienda al comprar la categoría de Cerveza? Favor indique en base a las siguientes frases que tan de acuerdo o en desacuerdo estaría.
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Totalmente de acuerdo</th>
+                                                    <th>De acuerdo</th>
+                                                    <th>Ni de acuerdo / ni en Desacuerdo</th>
+                                                    <th>En Desacuerdo</th>
+                                                    <th>Totalmente en Desacuerdo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>El pasillo de la cerveza es fácil de localizar / identificar en la tienda</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q35cbox" value="O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q35cbox" value="O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q35cbox" value="O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q35cbox" value="O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q35cbox" value="O5"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>El estante de la cerveza está bien ordenado y se ve bien</td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q36cbox" value="O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q36cbox" value="O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q36cbox" value="O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q36cbox" value="O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q36cbox" value="O5"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Se puede encontrar fácilmente la marca / tipo de cerveza Busco</td>
+                                                    
+                                                    <td style="text-align:center"><input type="checkbox" name="q37cbox" value="O1"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q37cbox" value="O2"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q37cbox" value="O3"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q37cbox" value="O4"></td>
+                                                    <td style="text-align:center"><input type="checkbox" name="q37cbox" value="O5"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center">
+                <button id="buttonProceess" type="button" onclick="save()" class="btn btn-success btn-lg">Guardar Encuesta</button>
+            </div>
+            <br />
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Get Date
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        console.log(minutes.toString().length);
+        if (minutes.toString().length < 2)
+            minutes = '0' + minutes;
+        $('#timeHeader').html("Hora " + hours + ":" + minutes);
+
+        $("#q8o1").click(function () {
+            $('#q9area').hide();
+            $('#q10area').hide();
+        });
+
+        $("#q8o2").click(function () {
+            $('#q9area').show();
+            $('#q10area').show();
+        });
+    });
+
+
+function save() {
+
+var obj = '{';
+obj = obj + '"Q1" : "' + $('input:radio[name=q1Radio]:checked').val() + '",';
+obj = obj + '"Q2" : "' + $('input:radio[name=q2Radio]:checked').val() + '",';
+obj = obj + '"Q3" : "' + $("#sel1").val() + '",';
+obj = obj + '"Q4" : "' + $('input:radio[name=q4Radio]:checked').val() + '",';
+obj = obj + '"Q5" : "' + $('input:radio[name=q5Radio]:checked').val() + '",';
+obj = obj + '"Q6" : "' + $('input:radio[name=q6Radio]:checked').val() + '",';
+obj = obj + '"Q7" : "' + $('input:radio[name=q7Radio]:checked').val() + '",';
+obj = obj + '"Q8" : "' + $('input:radio[name=q8Radio]:checked').val() + '",';
+obj = obj + '"Q9" : "' + $('input:radio[name=q9Radio]:checked').val() + '",';
+obj = obj + '"Q10" : "' + $('input:radio[name=q10Radio]:checked').val() + '",';
+obj = obj + '"Q11" : "' + $('input:radio[name=q11Radio]:checked').val() + '",';
+obj = obj + '"Q12" : "' + $('input:radio[name=q12Radio]:checked').val() + '",';
+obj = obj + '"Q13" : "' + $('input:radio[name=q13Radio]:checked').val() + '",';
+obj = obj + '"Q14" : "' + $('input:radio[name=q14Radio]:checked').val() + '",';
+
+  var q15values = [];
+    var q15fields = $('input:checkbox[name="q15cbox"]:checked');
+    for(var i = 0; i < q15fields.length; i++) {
+        q15values.push(q15fields[i].value);
+    }
+
+     var q15text = $('input:text[name="q15text"]').val();
+
+    if(q15text.length>0)
+        q15values.push(q15text);
+
+obj = obj + '"Q15" : "' + q15values + '",';
+
+  var q16values = [];
+    var q16fields = $('input:checkbox[name="q16cbox"]:checked');
+    for(var i = 0; i < q16fields.length; i++) {
+        q16values.push(q16fields[i].value);
+    }
+
+obj = obj + '"Q16" : "' + q16values + '",';
+
+
+
+obj = obj + '"Q17A" : "' + $('input:radio[name=q17Radio]:checked').val() + '",';
+
+  var q17values = [];
+    var q17fields = $('input:checkbox[name="q17cbox"]:checked');
+    for(var i = 0; i < q17fields.length; i++) {
+        q17values.push(q17fields[i].value);
+    }
+
+     var q17text = $('input:text[name="q17text"]').val();
+
+    if(q17text.length>0)
+        q17values.push(q17text);
+
+obj = obj + '"Q17B" : "' + q17values + '",';
+
+
+  var q18values = [];
+    var q18fields = $('input:checkbox[name="q18cbox"]:checked');
+    for(var i = 0; i < q18fields.length; i++) {
+        q18values.push(q18fields[i].value);
+    }
+
+obj = obj + '"Q18" : "' + q18values + '",';
+
+  var q19values = [];
+    var q19fields = $('input:checkbox[name="q19cbox"]:checked');
+    for(var i = 0; i < q19fields.length; i++) {
+        q19values.push(q19fields[i].value);
+    }
+
+obj = obj + '"Q19" : "' + q19values + '",';
+
+  var q20values = [];
+    var q20fields = $('input:checkbox[name="q20cbox"]:checked');
+    for(var i = 0; i < q20fields.length; i++) {
+        q20values.push(q20fields[i].value);
+    }
+
+obj = obj + '"Q20" : "' + q20values + '",';
+
+  var q21values = [];
+    var q21fields = $('input:checkbox[name="q21cbox"]:checked');
+    for(var i = 0; i < q21fields.length; i++) {
+        q21values.push(q21fields[i].value);
+    }
+
+obj = obj + '"Q21" : "' + q21values + '",';
+
+
+ var q22values = [];
+    var q22fields = $('input:checkbox[name="q22cbox"]:checked');
+    for(var i = 0; i < q22fields.length; i++) {
+        q22values.push(q22fields[i].value);
+    }
+
+obj = obj + '"Q22" : "' + q22values + '",';
+
+
+ var q23values = [];
+    var q23fields = $('input:checkbox[name="q23cbox"]:checked');
+    for(var i = 0; i < q23fields.length; i++) {
+        q23values.push(q23fields[i].value);
+    }
+
+obj = obj + '"Q23" : "' + q23values + '",';
+
+
+ var q24values = [];
+    var q24fields = $('input:checkbox[name="q24cbox"]:checked');
+    for(var i = 0; i < q24fields.length; i++) {
+        q24values.push(q24fields[i].value);
+    }
+
+obj = obj + '"Q24" : "' + q24values + '",';
+
+
+ var q25values = [];
+    var q25fields = $('input:checkbox[name="q25cbox"]:checked');
+    for(var i = 0; i < q25fields.length; i++) {
+        q25values.push(q25fields[i].value);
+    }
+
+obj = obj + '"Q25" : "' + q25values + '",';
+
+ var q26values = [];
+    var q26fields = $('input:checkbox[name="q26cbox"]:checked');
+    for(var i = 0; i < q26fields.length; i++) {
+        q26values.push(q26fields[i].value);
+    }
+
+obj = obj + '"Q26" : "' + q26values + '",';
+
+ var q27values = [];
+    var q27fields = $('input:checkbox[name="q27cbox"]:checked');
+    for(var i = 0; i < q27fields.length; i++) {
+        q27values.push(q27fields[i].value);
+    }
+
+obj = obj + '"Q27" : "' + q27values + '",';
+
+obj = obj + '"Q28A" : "' + $('input:radio[name=q28Radio]:checked').val() + '",';
+
+  var q28values = [];
+    var q28fields = $('input:checkbox[name="q28cbox"]:checked');
+    for(var i = 0; i < q28fields.length; i++) {
+        q28values.push(q28fields[i].value);
+    }
+
+
+obj = obj + '"Q28B" : "' + q28values + '",';
+
+obj = obj + '"Q29" : "' + $('input:radio[name=q29Radio]:checked').val() + '",';
+
+obj = obj + '"Q30" : "' + $('input:radio[name=q30Radio]:checked').val() + '",';
+
+obj = obj + '"Q31" : "' + $('input:radio[name=q31Radio]:checked').val() + '",';
+
+obj = obj + '"Q32" : "' + $('input:radio[name=q32Radio]:checked').val() + '",';
+
+obj = obj + '"Q33" : "' + $('input:radio[name=q33Radio]:checked').val() + '",';
+
+obj = obj + '"Q34" : "' + $('input:radio[name=q34Radio]:checked').val() + '",';
+
+ var q35values = [];
+    var q35fields = $('input:checkbox[name="q35cbox"]:checked');
+    for(var i = 0; i < q35fields.length; i++) {
+        q35values.push(q35fields[i].value);
+    }
+
+obj = obj + '"Q35" : "' + q35values + '",';
+
+ var q36values = [];
+    var q36fields = $('input:checkbox[name="q36cbox"]:checked');
+    for(var i = 0; i < q36fields.length; i++) {
+        q36values.push(q36fields[i].value);
+    }
+
+obj = obj + '"Q36" : "' + q36values + '",';
+
+ var q37values = [];
+    var q37fields = $('input:checkbox[name="q37cbox"]:checked');
+    for(var i = 0; i < q37fields.length; i++) {
+        q37values.push(q37fields[i].value);
+    }
+
+obj = obj + '"Q37" : "' + q37values + '"}';
+
+//get observationNumber
+if (localStorage.surveyCount ) {
+    localStorage.surveyCount  = Number(localStorage.surveyCount ) + 1;
+} else {
+    localStorage.surveyCount  = 1;
+}
+
+// Store
+localStorage.setItem("survey" + localStorage.surveyCount  , obj);
+
+alert("survey" + localStorage.surveyCount );
+
+ alert(localStorage.getItem("survey" + localStorage.surveyCount )); 
+}
+
+</script>
